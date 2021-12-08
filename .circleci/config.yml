@@ -9,6 +9,6 @@ jobs:
   test:
     machine:
       image: ubuntu-2004:20211-01
-      steps:
-        - checkout:
-            path: project
+    steps:
+      - checkout:
+          path: project
