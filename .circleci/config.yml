@@ -7,8 +7,8 @@ workflows:
 
 jobs:
   test:
-    machine:
-      image: ubuntu-2004:20211-01
+    docker:
+      - image: cimg/node:current
     steps:
       - checkout:
           path: project
