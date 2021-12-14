@@ -9,7 +9,7 @@ jobs:
   test:
     machine:
       image: ubuntu-2004:202011-01
-    resource_class: arm-medium
+    resource_class: arm-large
     steps:
       - checkout:
           path: project
