@@ -8,8 +8,8 @@ workflows:
 jobs:
   test:
     machine:
-      image: ubuntu-2004:202101-01
-    resource_class: arm-medium
+      image: ubuntu-2004:202008-01
+    resource_class: medium
     steps:
       - checkout:
           path: project
