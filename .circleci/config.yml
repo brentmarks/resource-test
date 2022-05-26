@@ -9,7 +9,7 @@ jobs:
   test:
     machine:
       image: ubuntu-2004:202008-01
-    resource_class: l1.2xlarge
+    resource_class: 2xlarge
     steps:
       - checkout:
           path: project
