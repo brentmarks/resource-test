@@ -7,9 +7,10 @@ workflows:
 
 jobs:
   test:
-    machine:
-      image: ubuntu-2004:202008-01
+    docker:
+      - image: docker:19.03.8
     resource_class: l1.2xlarge
     steps:
       - checkout:
           path: project
+      - setup_remote_docker
