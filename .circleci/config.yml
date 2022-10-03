@@ -9,7 +9,7 @@ jobs:
   test:
     docker:
       - image: docker:19.03.8
-    resource_class: medium
+    resource_class: small
     steps:
       - checkout:
           path: project
