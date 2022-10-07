@@ -13,4 +13,5 @@ jobs:
     steps:
       - checkout:
           path: project
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 20.10.11
