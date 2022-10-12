@@ -7,9 +7,8 @@ workflows:
 
 jobs:
   test:
-    docker:
-      - image: docker:19.03.8
-    resource_class: small
+    macos:
+      xcode: 13.3
     steps:
       - checkout:
           path: project
