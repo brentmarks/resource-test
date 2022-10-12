@@ -8,9 +8,7 @@ workflows:
 jobs:
   test:
     macos:
-      xcode: 13.3.1
+      xcode: 13.3
     steps:
       - checkout:
           path: project
-      - setup_remote_docker:
-          version: 20.10.11
