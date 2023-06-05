@@ -1,16 +1,21 @@
+
 version: 2.1
-
-workflows:
-  main:
-    jobs:
-      - test
-
 jobs:
-  test:
-    docker:
-      - image: docker:19.03.8
-    resource_class: l1.2xlarge
+  say-hello:
+    resource-class: 2xlarge+
+    machine:
+      image: ubuntu-2004:2022.07.1
+    # Add steps to the job
+    # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
-      - checkout:
-          path: project
-      - setup_remote_docker
+      - checkout
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World!"
+
+# Orchestrate jobs using workflows
+# See: https://circleci.com/docs/configuration-reference/#workflows
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
