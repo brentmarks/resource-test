@@ -2,7 +2,7 @@
 version: 2.1
 jobs:
   say-hello:
-    resource_class: 2xlarge+
+    resource_class: large
     machine:
       image: ubuntu-2004:2022.07.1
     # Add steps to the job
