@@ -7,10 +7,8 @@ workflows:
 
 jobs:
   test:
-    docker:
-      - image: docker:19.03.8
-    resource_class: l1.2xlarge
+    macos:
+      xcode: 14.2.0
+    resource_class: macos.m1.large.gen1
     steps:
-      - checkout:
-          path: project
-      - setup_remote_docker
+      - run: echo "hello"
