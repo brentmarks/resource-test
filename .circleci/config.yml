@@ -11,5 +11,4 @@ jobs:
       - image: cimg/base:2025.01
     resource_class: large
     steps:
-      - checkout:
-          path: project
+      - run: echo "hello"
