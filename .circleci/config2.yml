@@ -1,0 +1,14 @@
+version: 2.1
+
+workflows:
+  main:
+    jobs:
+      - test
+
+jobs:
+  test:
+    machine:
+      image: ubuntu-2004:202011-01
+    steps:
+      - checkout:
+          path: project
