@@ -8,9 +8,8 @@ workflows:
 jobs:
   test:
     docker:
-      - image: docker:19.03.8
-    resource_class: l1.xlarge
+      - image: cimg/base:2023.03
+    resource_class: 2xlarge
     steps:
       - checkout:
           path: project
-      - setup_remote_docker
