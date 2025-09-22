@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   say-hello:
     macos:
-      xcode: 14.2.0
+      xcode: 13.4.1
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
