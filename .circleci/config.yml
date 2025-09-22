@@ -2,7 +2,6 @@
 version: 2.1
 jobs:
   say-hello:
-    resource_class: m4pro.medium
     macos:
       xcode: 14.2.0
     # Add steps to the job
